@@ -110,3 +110,7 @@ nav > a {
     text-decoration: none;
     padding-inline-start: unset;
 }
+
+.center{
+    justify-content: center;
+}
