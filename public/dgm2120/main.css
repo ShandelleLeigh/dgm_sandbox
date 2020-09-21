@@ -1,0 +1,112 @@
+body{
+    margin: 0;
+    background-color: rgba(38, 0, 255, 0.089);
+}
+body, p, sub, span, div{
+    font-family: 'Source Sans', sans-serif;
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: 300;
+}
+header, h1,h2,h3,h4,h5,h6 {
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-weight: 400;
+}
+h1{
+    font-size: 2.5em;
+}
+div.header{
+    /* background-color: rgba(255, 0, 200, 0.3); */
+    width: 100%;
+}
+footer{
+    /* position: absolute; */
+    /* bottom: 0; */
+    height: 100px;
+    /* background-color: rgba(255, 0, 200, 0.3); */
+    width: 100%;
+}
+nav{
+    justify-content: flex-end;
+    display: flex;
+    padding: 16px 5%;
+    box-sizing: border-box;
+    /* background-color: rgba(0, 255, 76, 0.3); */
+}
+nav > a {
+    padding: 0 16px;
+    border-radius: 8px;
+    /* background-color: rgba(255, 217, 0, 0.3); */
+    /* border: blueviolet solid 3px; */
+    line-height: 60px;
+    text-decoration: none;
+    color: black;
+    margin: 0 16px;
+
+}
+.hover:hover{
+     /* background: blue; */
+     box-shadow: 0 4px 4px 0 rgba(0,0,0,0.09), -1px 0 2px 0 rgba(0,0,0,0.06), 4px 4px 8px 0 rgba(0,0,0,0.11);
+}
+.header_home{
+    text-decoration: none;
+    color: black;
+
+}
+.company_svg{
+    display: block;
+    height: 60px;
+    margin: 24px auto 28px auto;
+}
+.content {
+    margin: 0 15%;
+    /* background-color: rgba(0, 255, 191, 0.144); */
+    /* max-width: 800px; */
+    max-width: 80%;
+}
+
+.grid-container {
+    display: inline-grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    /* grid-template-rows: repeat(auto, 1fr); */
+    column-gap: 16px;
+    row-gap: 16px;
+    grid-auto-flow: dense;
+}
+.gallery{
+    background-color: rgba(0, 0, 255, 0.3);
+    width: 80%;
+}
+.grid-item{
+    grid-column: auto / span 1;
+    grid-row: auto / span 1;
+    box-sizing: border-box;
+    /* display: contents; */
+}
+.gallery-box{
+    background-color: rgba(255, 0, 0, 0.3);
+    padding: 12px 8px 4px 8px;
+    min-height: 200px;
+    max-height: 400px;
+    /* width: calc(33% - 48px); */
+    width: 100%;
+}
+
+.inner-box{
+    background-color: rgba(255, 255, 0, 0.3);
+    /* box-sizing: border-box;
+    height: 100%;
+    width: 100%; */
+}
+
+.text-block{
+    max-width: 800px;
+}
+
+/* content pages */
+.no-deco{
+    list-style: none;
+    color: #000;
+    text-decoration: none;
+    padding-inline-start: unset;
+}
