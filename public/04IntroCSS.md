@@ -31,27 +31,27 @@ Class Selectors
 - [x] - Include at least two CSS rules that links to a CLASS selector
 
 Border
-- [ ] - Please demonstrate you can use borders in your work by implementing the following.
-- [ ] - Border (color, type, thickness)
+- [x] - Please demonstrate you can use borders in your work by implementing the following.
+- [x] - Border (color, type, thickness)
 
 Navigation
 - [x] - Turn the ul used for page navigation into a horizontal list.
 - [ ] - Float menu items
 - [x] - Remove default underlining
 - [x] - Make menu items look nice with padding
-- [ ] - Use a background color in the nav and prevent it from collapsing
+- [x] - Use a background color in the nav and prevent it from collapsing
 
 Psudo Classes
 - [x] - Write a pseudo class that affects the links on the content of your page.
 - [x] - a:hover{}
 
 Active State
-- [ ] - Demonstrate that you know how apply an active state to your navigation items to show improve "way finding" on your site.
-- [ ] - Add a class=”active” to each of your menu items
-- [ ] - Style the class with an “active” color that looks nice
+- [x] - Demonstrate that you know how apply an active state to your navigation items to show improve "way finding" on your site.
+- [x] - Add a class=”active” to each of your menu items
+- [x] - Style the class with an “active” color that looks nice
 
 External Fonts
-- [ ] - Type is important as it sets the mood of your page. Instead of using with the default fonts on the end users system, let's try a Google font. NOTE: You are not allowed to use the Google Font Face "Signika" because that is the one I used in the example. Please pick another one.
+- [x] - Type is important as it sets the mood of your page. Instead of using with the default fonts on the end users system, let's try a Google font. NOTE: You are not allowed to use the Google Font Face "Signika" because that is the one I used in the example. Please pick another one.
 
 - [x] - Import a Google font
 - [x] - CSS font-family property
@@ -60,14 +60,14 @@ External Fonts
 
 Colors
 - [ ] - Please also include these additional things in the CSS of your document.
-- [ ] - Background color used
+- [x] - Background color used
 - [x] - Font color used
 
 Color Methods
-- [ ] - Please also include these additional things in the CSS of your document.
-- [ ] - Color Name used
+- [x] - Please also include these additional things in the CSS of your document.
+- [x] - Color Name used
 - [x] - HEX color used
-- [ ] - RGB color used
+- [x] - RGB color used
 
 Valid CSS
 - [ ] - Please check your code for ALL three pages prior to sending it to see if you missed anything. You should use the html code validator located at http://validator.w3.org.

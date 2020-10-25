@@ -7,17 +7,18 @@ body{
     font-family: 'Source Sans', sans-serif;
     height: 100%;
     overflow: auto;
-    background: linear-gradient(
-        0deg,
-        #cee5dd,
-        #d8ecf3
-    );
+    background-color: #cee5dd;
+    background: -moz-linear-gradient( 0deg,#cee5dd,#d8ecf3);
+    background: -webkit-linear-gradient( 0deg,#cee5dd,#d8ecf3);
+    background: linear-gradient( 0deg,#cee5dd,#d8ecf3);
 }
-p, sub, dl{
+p, sub, dl, a{
     font-family: 'Source Sans', sans-serif;
     font-size: 18px;
-    line-height: 26px;
     font-weight: 300;
+}
+p, sub, dl {
+    line-height: 26px;
 }
 header,h1,h2,h3,h4,h5,h6 {
     font-family: 'Montserrat Alternates', sans-serif;
@@ -25,6 +26,12 @@ header,h1,h2,h3,h4,h5,h6 {
 }
 h1{
     font-size: 2.5em;
+}
+a, a:link, a:visited, a:hover, a:active{
+    color: #000000;
+}
+a:visited, a:hover, a:active{
+    font-weight: 500;
 }
 /* header */
 header{
@@ -39,6 +46,7 @@ header{
 }
 nav ul{
     font-family: 'Montserrat',sans-serif;
+    background-color: #d5e9ed;
     list-style-type: none;
     margin-block-end: unset;
     margin-block-start: unset;
@@ -153,14 +161,7 @@ button:active{
     box-shadow: unset;
     border-color: #DC7A5F;
 }
-button:hover{
-    /* Material-UI paper shadow: */
-    box-shadow:
-        0px 3px 3px -2px rgba(0,0,0,0.2),
-        2px 3px 4px 1px rgba(0,0,0,0.14),
-        1px 1px 8px 2px rgba(0,0,0,0.12);
-    /* background-color: #62B7D9; */
-}
+
 button.back-top{
     margin: 100px auto;
     display: block;
@@ -185,9 +186,10 @@ button.back-top:hover{
     box-shadow:
         4px 4px 20px #8cb9af,
         -5px -5px 20px #f4fffe;
+    border: #black solid 1px;
 }
 button.back-top:active{
-    border: unset !important;
+    outline: unset;
     border-radius: 27.5px;
 }
 
@@ -198,14 +200,15 @@ button.back-top:active{
 /* blockquote */
 blockquote{
     padding: 20px 30px 40px 30px;
-    background-color: rgba(129, 207, 184, 0.493);
+    background-color: rgba(129, 207, 184, 0.2);
+    box-shadow:
+        6px  6px 15px rgba( 76, 138, 130, 0.2),
+        -7px -7px 25px rgba(255, 255, 255, 0.5);
+    border-radius: 7px;
     margin-block-start:unset;
     margin-block-end:unset;
     margin-inline-start:unset;
     margin-inline-end:unset;
-    box-shadow:
-     6px  6px 15px rgba( 76, 138, 130, 0.2),
-    -7px -7px 25px rgba(255, 255, 255, 0.5)
 }
 
 /* footer */
