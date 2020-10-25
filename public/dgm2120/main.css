@@ -28,10 +28,10 @@ h1{
     font-size: 2.5em;
 }
 a, a:link, a:visited, a:hover, a:active{
-    color: #000000;
+    color: #414141;
 }
 a:visited, a:hover, a:active{
-    font-weight: 500;
+    font-weight: #000000;
 }
 /* header */
 header{
@@ -61,25 +61,20 @@ nav ul{
         10px 10px 25px #a6c3ce,
         -15px -15px 30px #f4fcff;
 }
-nav li, nav a {
+nav li *, nav a{
     list-style: none;
     text-decoration: none;
-    color: #000000;
     border: none;
     display: inline-block;
     vertical-align: middle;
     vertical-align: -webkit-baseline-middle;
+    vertical-align: -moz-baseline-middle;
     text-transform: uppercase;
 }
-nav li, nav ul span{
-    padding: 10px 20px;
+nav li{
+    padding: 10px 15px;
     height: 30px;
     cursor: pointer;
-    /* background-color: rgba(0, 255, 13, 0.12); */
-}
-nav ul span{
-    padding:10px;
-    /* background-color: rgba(255, 0, 0, 0.12); */
 }
 nav li.active{
 
@@ -99,6 +94,7 @@ nav li.active{
 nav li.active * {
     text-shadow:
         -1px -1px 2px #f4fcff;
+    color: black;
 }
 /*
 - [ ] - Use padding and margin to style the lists
@@ -186,7 +182,7 @@ button.back-top:hover{
     box-shadow:
         4px 4px 20px #8cb9af,
         -5px -5px 20px #f4fffe;
-    border: #black solid 1px;
+    border: black solid 1px;
 }
 button.back-top:active{
     outline: unset;
