@@ -31,7 +31,7 @@ a, a:link, a:visited, a:hover, a:active{
     color: #414141;
 }
 a:visited, a:hover, a:active{
-    font-weight: #000000;
+    color: #000000;
 }
 /* header */
 header{
@@ -44,18 +44,16 @@ header{
     width: fit-content;
     margin: 15px;
 }
+ul{
+    margin: unset;
+}
 nav ul{
     font-family: 'Montserrat',sans-serif;
     background-color: #d5e9ed;
     list-style-type: none;
-    margin-block-end: unset;
-    margin-block-start: unset;
-    margin-inline-end: unset;
-    margin-inline-start: unset;
-    padding-inline-start: unset;
+    margin: unset;
     justify-content: space-between;
     display: flex;
-    /* padding: 0 10px; */
     border-radius: 7px;
     box-shadow:
         10px 10px 25px #a6c3ce,
@@ -72,7 +70,7 @@ nav li *, nav a{
     text-transform: uppercase;
 }
 nav li{
-    padding: 10px 15px;
+    padding: 10px;
     height: 30px;
     cursor: pointer;
 }
@@ -96,9 +94,6 @@ nav li.active * {
         -1px -1px 2px #f4fcff;
     color: black;
 }
-/*
-- [ ] - Use padding and margin to style the lists
-*/
 /* content */
 @media (min-width: 800px){
     .header, .content, .footer{
@@ -132,10 +127,7 @@ ul.second-list{
 /* definition list */
 dl {
     display: block;
-    margin-block-start:  .25em;
-    margin-block-end:    .25em;
-    margin-inline-start: .25em;
-    margin-inline-end:   .25em;
+    margin:  .25em;
 }
 dt, dd {
     margin-top: 18px;
@@ -201,10 +193,7 @@ blockquote{
         6px  6px 15px rgba( 76, 138, 130, 0.2),
         -7px -7px 25px rgba(255, 255, 255, 0.5);
     border-radius: 7px;
-    margin-block-start:unset;
-    margin-block-end:unset;
-    margin-inline-start:unset;
-    margin-inline-end:unset;
+    margin:unset;
 }
 
 /* footer */
