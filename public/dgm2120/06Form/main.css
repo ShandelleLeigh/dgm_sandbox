@@ -12,7 +12,7 @@ body{
     background: -webkit-linear-gradient( 0deg,#cee5dd,#d8ecf3);
     background: linear-gradient( 0deg,#cee5dd,#d8ecf3);
 }
-p, sub, dl, a, figcaption{
+p, sub, dl, a, figcaption, label{
     font-family: 'Source Sans', sans-serif;
     font-size: 18px;
     font-weight: 300;
@@ -20,7 +20,7 @@ p, sub, dl, a, figcaption{
 p, sub, dl {
     line-height: 26px;
 }
-header,h1,h2,h3,h4,h5,h6 {
+header,h1,h2,h3,h4,h5,h6,legend {
     font-family: 'Montserrat Alternates', sans-serif;
     font-weight: 400;
 }
@@ -59,7 +59,7 @@ nav ul{
     display: flex;
     border-radius: 7px;
     box-shadow:
-        10px 10px 25px #a6c3ce,
+        10px  10px 25px #a6c3ce,
         -15px -15px 30px #f4fcff;
 }
 nav li *, nav a{
@@ -153,7 +153,8 @@ strong {
     font-weight: 400;
 }
 /* buttons */
-button:hover{
+
+button:hover, .button-submit:hover{
     /* Material-UI paper shadow: */
     box-shadow:
         0px 3px 3px -2px rgba(0,0,0,0.2),
@@ -161,12 +162,12 @@ button:hover{
         1px 1px 8px 2px rgba(0,0,0,0.12);
     background-color: #62B7D9;
 }
-button:active{
+button:active,.button-submit:active{
     box-shadow: unset;
     border-color: #DC7A5F;
 }
 
-button.back-top{
+button.back-top,.button-submit{
     margin: 100px auto;
     display: block;
     height: 55px;
@@ -186,13 +187,13 @@ button.back-top{
         8px 8px 20px #8cb9af,
         -10px -10px 20px #f4fffe;
 }
-button.back-top:hover{
+button.back-top:hover {
     box-shadow:
         4px 4px 20px #8cb9af,
         -5px -5px 20px #f4fffe;
     border: black solid 1px;
 }
-button.back-top:active{
+button.back-top:active,.button-submit:active{
     outline: unset;
     border-radius: 27.5px;
 }
@@ -278,4 +279,56 @@ footer.footer{
 }
 .gallery_item > figcaption {
     max-width: 270px;
+}
+
+/* Forms */
+fieldset {
+    border-radius: 12px;
+    box-shadow:
+        6px  6px 15px rgba( 76, 138, 130, 0.2);
+    padding: 12px 12px 36px 12px;
+    margin: 36px 0px;
+}
+.button-submit{
+    padding: 6px 18px;
+    /* background-color: #0fdfca; */
+    font-weight: 500;
+    margin: 20px 0 0 auto;
+    width: 150px;
+}
+.button-submit:hover{
+    box-shadow:
+        4px 4px 20px #8cb9af,
+        -5px -5px 20px #f4fffe;
+    border: #2eb6ab solid 2px;
+    background-color: #80dbc8;
+}
+fieldset label, fieldset label .text-input, fieldset label select, fieldset label textarea{
+    display: block;
+}
+input.text-input, fieldset label select, fieldset label textarea{
+    height: 45px;
+    border: solid 1px #808080;
+    border-radius: 8px;
+    width: 300px;
+    padding: 10px 15px;
+    box-sizing: border-box;
+    outline: none;
+    background-color: rgba(255, 255, 255, 0.75);
+}
+fieldset label select{
+    width: auto;
+    /* appearance: none; */
+}
+select option{
+    margin-left: 20px;
+}
+fieldset label textarea{
+    height: 300px;
+}
+input:focus, select:focus, textarea:focus{
+    border: #2a2a2a 2px solid;
+}
+form, fieldset {
+    width: 750px;
 }

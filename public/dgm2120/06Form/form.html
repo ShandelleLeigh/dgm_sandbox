@@ -39,64 +39,66 @@
 
 <!-- Content -->
 <main class='content'>
+    <!-- method="GET" will show user input in url on submit -->
     <h1>Contact</h1>
-    <br>
+    <form action="thanks.html" method="POST" enctype="multipart/form-data" name="practiceForm">
+    <!-- <form action="" method="GET" enctype="multipart/form-data" name="practiceForm"> -->
+        <fieldset> <legend>Basic Contact Information - Required Information</legend>
+            <label>Name<input class="text-input" placeholder="Full Name" name="name" value="" type="text" required></label>
+            <label>Phone Number<input class="text-input" pattern="[0-1]{7-10}" name="phone" value="" type="tel" required></label>
+            <label>Email<input class="text-input" placeholder="example@email.com" name="email" value="" type="email" required></label>
+        </fieldset>
 
-    <form action="" method="POST" enctype="multipart/form-data" name="practiceForm">
-        <fieldset> <legend>Basic Contact Information</legend>
-            <label>Name<input placeholder="Full Name" name="name" value="" type="text"></label>
-            <label>Phone Number<input placeholder="(000) 000-0000" name="phone" value="" type="tel"></label>
-            <label>Email<input placeholder="example@email.com" name="email" value="" type="email"></label>
-            <p>Select One:</p>
-            <label><input name="buttons" value="first" type="radio"> First</label>
-            <label><input name="buttons" value="second" type="radio"> Second</label>
-            <label><input name="buttons" value="third" type="radio"> Third</label>
-
-            <p>What pets do you have?</p>
-            <label>Dog<input   placeholder="" name="" value="" type="checkbox"></label>
-            <label>Cat<input   placeholder="" name="" value="" type="checkbox"></label>
-            <label>Fish<input  placeholder="" name="" value="" type="checkbox"></label>
-            <label>Other<input placeholder="" name="" value="" type="checkbox"></label>
+        <fieldset>
+            <legend>Optional Information</legend>
 
 
-            <select>
-                <option>1</option>
-                <option>2</option>
-                <option>3</option>
-            </select>
-            <!-- <label>Select<input placeholder="" name="" value="" type="select"></label> -->
+            <h4>What's your favorite icecream flavor?</h4>
+            <label><input name="buttons" value="vanilla" type="radio"> Vanilla</label>
+            <label><input name="buttons" value="chocolate" type="radio"> Chocolate</label>
+            <label><input name="buttons" value="cookie-dough" type="radio"> Cookie Dough</label>
+            <label><input name="buttons" value="other" type="radio"> Other</label>
 
-            <label>Text Area<textarea> </textarea></label>
-            <label><input placeholder="" name="" value="" type="text"></label>
+            <h4>What pets do you have?</h4>
+            <label><input name="dog" value="dog" type="checkbox">Dog</label>
+            <label><input name="cat" value="cat" type="checkbox">Cat</label>
+            <label><input name="fish" value="fish" type="checkbox">Fish</label>
+            <label><input name="other" value="other" type="checkbox">Other</label>
+            <label><input name="none" value="none" type="checkbox">None</label>
 
         </fieldset>
 
         <fieldset>
-            <legend></legend>
+            <legend>More Optional Information</legend>
+
+            <label> Select a number
+                <select name="select">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select>
+            </label>
+
+            <input type="hidden" name="hidden-input" value="hidden-input-value">
+
+            <label>Comments<textarea name="comments" ></textarea></label>
 
         </fieldset>
-
-        <fieldset>
-            <legend></legend>
-
-        </fieldset>
-
         <input
             class='button-submit'
-            onclick='location.href="thanks.html"'
             name="submitButton"
             type='submit'
-            value="Submit"
+            value="SUBMIT"
+            action="thanks.html"
         >
-
     </form>
 
-
-
-
-    <button class='back-top' onclick='location.href="#top"' type='button'>
+    <!-- <button class='back-top' onclick='location.href="#top"' type='button'>
         – Back to top –
-    </button>
+    </button> -->
+
 </main>
 
 <!-- Footer -->
