@@ -3,6 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="refresh" content="3; URL=index.html">
         <title>Contact</title>
         <link rel="stylesheet" type="text/css" href="./main.css">
         <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,200;0,400;0,500;0,600;0,800;0,900;1,100;1,200;1,400;1,500&display=swap" rel="stylesheet">
@@ -21,84 +22,32 @@
     </div>
     <nav>
       <ul>
-        <li><a href="./index.html">Homepage</a></li>
-        <li>|</li>
-        <li><a href="urn_plant.html">Silver Pitcher</a></li>
-        <li>|</li>
+        <li><a href="./index.html">Home</a></li>
+        <li class='divider'>|</li>
+        <li><a href="urn_plant.html">Urn Plant</a></li>
+        <li class='divider'>|</li>
         <li><a href="pothos.html">Pothos</a></li>
-        <li>|</li>
+        <li class='divider'>|</li>
         <li><a href="gallery.html">Gallery</a></li>
-        <li>|</li>
-        <li><a href="terms.html">More Information</a></li>
-        <li>|</li>
+        <li class='divider'>|</li>
+        <li><a href="terms.html">Info</a></li>
+        <li class='divider'>|</li>
         <li class='active'><a href="form.html">Contact</a></li>
       </ul>
     </nav>
   </header>
 <!-- Reuseable Top Nav / -->
 
-<!-- Content -->
-<main class='content'>
-    <!-- method="GET" will show user input in url on submit -->
-    <h1>Contact</h1>
-    <form action="thanks.html" method="POST" enctype="multipart/form-data" name="practiceForm">
-    <!-- <form action="" method="GET" enctype="multipart/form-data" name="practiceForm"> -->
-        <fieldset> <legend>Basic Contact Information - Required Information</legend>
-            <label>Name<input class="text-input" placeholder="Full Name" name="name" value="" type="text" required></label>
-            <label>Phone Number<input class="text-input" pattern="[0-1]{7-10}" name="phone" value="" type="tel" required></label>
-            <label>Email<input class="text-input" placeholder="example@email.com" name="email" value="" type="email" required></label>
-        </fieldset>
-
-        <fieldset>
-            <legend>Optional Information</legend>
-
-
-            <h4>What's your favorite icecream flavor?</h4>
-            <label><input name="buttons" value="vanilla" type="radio"> Vanilla</label>
-            <label><input name="buttons" value="chocolate" type="radio"> Chocolate</label>
-            <label><input name="buttons" value="cookie-dough" type="radio"> Cookie Dough</label>
-            <label><input name="buttons" value="other" type="radio"> Other</label>
-
-            <h4>What pets do you have?</h4>
-            <label><input name="dog" value="dog" type="checkbox">Dog</label>
-            <label><input name="cat" value="cat" type="checkbox">Cat</label>
-            <label><input name="fish" value="fish" type="checkbox">Fish</label>
-            <label><input name="other" value="other" type="checkbox">Other</label>
-            <label><input name="none" value="none" type="checkbox">None</label>
-
-        </fieldset>
-
-        <fieldset>
-            <legend>More Optional Information</legend>
-
-            <label> Select a number
-                <select name="select">
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5</option>
-                </select>
-            </label>
-
-            <input type="hidden" name="hidden-input" value="hidden-input-value">
-
-            <label>Comments<textarea name="comments" ></textarea></label>
-
-        </fieldset>
-        <input
-            class='button-submit'
-            name="submitButton"
-            type='submit'
-            value="SUBMIT"
-        >
-    </form>
-    <!-- <button class='back-top' onclick='location.href="#top"' type='button'>
+    <!-- Content -->
+    <div class='content'>
+        <div class="spaced">
+            <h1>Thanks!</h1>
+            <!-- auto-forward to homepage -->
+        </div>
+    </div>
+    <button class='back-top' onclick='location.href="#top"' type='button'>
         – Back to top –
-    </button> -->
-
-</main>
-
+    </button>
 <!-- Footer -->
 <footer class='footer'>
     <sub>©2020 Shandelle Jensen • DGM 2120</sub>

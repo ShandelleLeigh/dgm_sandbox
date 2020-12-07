@@ -37,6 +37,9 @@ a:visited, a:hover, a:active{
 header{
     text-align: center;
 }
+.header.main{
+    margin: 30px auto;
+}
 .company_svg{
     max-height: 60px;
     max-width: 50%;
@@ -60,6 +63,11 @@ nav ul{
         10px 10px 25px #a6c3ce,
         -15px -15px 30px #f4fcff;
 }
+.center .centered-nav{
+    justify-content: space-around;
+    width: fit-content;
+    margin: 45px auto;
+}
 nav li *, nav a{
     list-style: none;
     text-decoration: none;
@@ -74,6 +82,16 @@ nav li{
     padding: 10px;
     height: 30px;
     cursor: pointer;
+}
+nav li, nav li *, nav a{
+    list-style: none;
+    text-decoration: none;
+    border: none;
+    display: inline-block;
+    vertical-align: middle;
+    vertical-align: -webkit-baseline-middle;
+    vertical-align: -moz-baseline-middle;
+    text-transform: uppercase;
 }
 nav li.active{
     border-radius: 7px;
@@ -210,4 +228,7 @@ blockquote{
 footer.footer{
     margin-top: 150px;
     height: 30px;
+    position: absolute;
+    bottom: 0;
+    left: 5vw;
 }
